@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    font-size: 18px;
+    font-family: 'kumbh sans';
+}
+
+body {
+    background-color: hsla(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.container {
+    position: relative;
+    border-radius: 18px;
+    width: 22rem;
+    height: 24rem;
+    background-color: white;
+    z-index: 2;
+}
+
+
+/* images formatting etc  */
+
+.top-bg {
+    position: fixed;
+    z-index: 1;
+    top: -36rem;
+    left: -5.5rem;
+}
+
+.top-bg img {
+    size: 100%;
+}
+
+.bot-bg {
+    position: fixed;
+    z-index: 1;
+    bottom: -36rem;
+    right: -5.5rem;
+}
+
+#card-bg {
+    width: 100%;
+    border-radius: 18px 18px 0 0;
+}
+
+#icon {
+    position: relative;
+    bottom: 13%;
+    left: 36.9%;
+    border-radius: 25rem;
+    border: white solid 4px;
+}
+
+
+/* mid container section */
+
+.name h1 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.name-place {
+    position: relative;
+    text-align: center;
+    bottom: 50px;
+}
+
+.name-place p {
+    position: relative;
+    color: hsl(227, 10%, 46%);
+    bottom: 9px;
+}
+
+.bottom-line {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    bottom: 36px;
+    right: 8px;
+    padding: 0 23px;
+}
+
+.bottom-line h1 {
+    font-weight: 700;
+    font-size: 1.05rem;
+}
+
+.bottom-line p {
+    position: relative;
+    font-weight: 400;
+    color: hsl(0, 0%, 59%);
+    bottom: 9px;
+    font-size: 0.8rem;
+}
+
+
+/* media queries */
+
+@media only screen and (max-width: 375px) {
+    .container {
+        position: relative;
+        width: 100%;
+    }
+}
